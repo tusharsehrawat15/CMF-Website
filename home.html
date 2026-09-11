@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMF by Nothing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">NOTHING</div>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<nav class="menu-panel" id="menuPanel">
+  <a href="#home">HOME</a>
+  <a href="#phones">PHONES</a>
+  <a href="#headphones">HEADPHONES</a>
+  <a href="#watches">WATCHES</a>
+  <a href="#earphones">EARPHONES</a>
+</nav>
+
+<section class="hero" id="home">
+  <h1>CMF <span>by Nothing</span></h1>
+  <p>Honest design, transparent engineering. CMF strips away the unnecessary
+     to give you tech that looks as good as it performs — headphones,
+     watches, phones and earphones built with intention.</p>
+</section>
+
+<section class="products" id="headphones">
+  <h2>Headphones</h2>
+  <div class="grid">
+    <a class="card" href="#">
+      <img src="cmf headphone pro.webp">
+      <div class="info"><h3>CMF Headphone Pro</h3><p>Active noise cancellation</p></div>
+    </a>
+    <a class="card" href="#">
+      <img src="cmf headphone 2.webp">
+      <div class="info"><h3>CMF Headphone Pro</h3><p>Lightweight everyday fit</p></div>
+    </a>
+    <a class="card" href="#">
+      <img src="cmf headphone 3.webp">
+      <div class="info"><h3>CMF Headphone Pro </h3><p>Hi-res audio, 42h battery</p></div>
+    </a>
+  </div>
+</section>
+
+<section class="products" id="watches">
+  <h2>Watches</h2>
+  <div class="grid">
+    <a class="card" href="#">
+      <img src="cmf watch 3 pro.webp">
+      <div class="info"><h3>CMF Watch 3 Pro</h3><p>AMOLED display</p></div>
+    </a>
+    <a class="card" href="#">
+      <img src="cmf watch 3 pro 2.webp">
+      <div class="info"><h3>CMF Watch 3 Pro</h3><p>Rotating crown control</p></div>
+    </a>
+    <a class="card" href="#">
+      <img src="cmf watch 3 pro 3.webp">
+      <div class="info"><h3>CMF Watch 3 Pro</h3><p>Minimal everyday tracker</p></div>
+    </a>
+  </div>
+</section>
+
+<section class="products" id="phones">
+  <h2>Phones</h2>
+  <div class="grid">
+    <a class="card" href="#">
+      <img src="phone 2 pro.webp">
+      <div class="info"><h3>CMF Phone 2 Pro</h3><p>Modular back panel</p></div>
+    </a>
+    <a class="card" href="#">
+      <img src="phone 2 pro 2.webp">
+      <div class="info"><h3>CMF Phone 2 Pro</h3><p>Budget-friendly essentials</p></div>
+    </a>
+    <a class="card" href="#">
+      <img src="phone 2 pro 3.webp">
+      <div class="info"><h3>CMF Phone 2 Pro</h3><p>Flagship performance</p></div>
+    </a>
+  </div>
+</section>
+
+<section class="products" id="earphones">
+  <h2>Earphones</h2>
+  <div class="grid">
+    <a class="card" href="#">
+      <img src="buds 2a.webp">
+      <div class="info"><h3>CMF Buds 2a</h3><p>ANC, 30h playback</p></div>
+    </a>
+    <a class="card" href="#">
+      <img src="buds 2a 2.webp">
+      <div class="info"><h3>CMF Buds 2a</h3><p>Lightweight daily wear</p></div>
+    </a>
+    <a class="card" href="#">
+      <img src="buds 2a 3.webp">
+      <div class="info"><h3>CMF Buds 2a</h3><p>Budget wireless option</p></div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  Made By TUSHAR SEHRAWAT
+  <p>This is a practice/portfolio project inspired by CMF by Nothing. Not affiliated with or endorsed by Nothing Technology.</p>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const menuPanel = document.getElementById('menuPanel');
+  const overlay = document.getElementById('overlay');
+
+  menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+    menuPanel.classList.toggle('open');
+    overlay.classList.toggle('show');
+  });
+
+  overlay.addEventListener('click', () => {
+    menuBtn.classList.remove('open');
+    menuPanel.classList.remove('open');
+    overlay.classList.remove('show');
+  });
+</script>
+
+</body>
+</html>
